@@ -1,0 +1,14 @@
+{ "manifest_version": 2
+, "name": "Japan Times Language Helper"
+, "version": "1.0"
+
+, "description" : "When viewing language lessons through the Japan Times website, remove pronunciation information for kanji the user already knows."
+
+, "icons": { "48": "icons/jo-48.png" }
+
+, "content_scripts":
+  [ { "matches": [ "*://www.japantimes.co.jp/life/*" ]
+    , "js": [ "jt-remover.js" ]
+    }
+  ]
+}
