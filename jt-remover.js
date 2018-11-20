@@ -215,7 +215,7 @@ const upToWK60 = upToWK59 + wk60;
 
 const myLevel = upToWK45;
 
-replaceText(new RegExp(`([${myLevel}]+)\\(${hiragana}+\\)`, 'g'), "$1");
+replaceText(new RegExp(`([${myLevel}]+)[\\(（]${hiragana}+[\\)）]`, 'g'), "$1");
 
 // Remove all hints on Joyo 1 kanji.
 // replaceText(/([一九七二人入八力十下三千上口土夕大女子小山川五天中六円手文日月木水火犬王正出本右四左玉生田白目石立百年休先名字早気竹糸耳虫村男町花見貝赤足車学林空金雨青草音校森]*)\([\u3040-\u309Fー\u30A0-\u30FF]*\)/, "$1");
