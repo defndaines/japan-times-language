@@ -213,7 +213,7 @@ const upToWK60 = upToWK59 + wk60;
 
 // replaceText(new RegExp(`([${joyo1}]+)\\(${hiragana}+\\)`, 'g'), "$1");
 
-const myLevel = upToWK45;
+const myLevel = upToWK50;
 
 replaceText(new RegExp(`([${myLevel}]+)[\\(（]${hiragana}+[\\)）]`, 'g'), "$1");
 
